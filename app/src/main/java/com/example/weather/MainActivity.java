@@ -110,14 +110,14 @@ public class MainActivity extends AppCompatActivity {
         Date currentDate = Calendar.getInstance().getTime();
         SimpleDateFormat dateFormat = new SimpleDateFormat(currentDate.toString());
         Date date = dateFormat.parse();
-        String day          = (String) DateFormat.format("dd",); // 20
-        String monthNumber  = (String) DateFormat.format("MM",   dateFormat); // 06
+        String day          = (String) DateFormat.format("dd",date); // 20
+        String monthNumber  = (String) DateFormat.format("MM",   date); // 06
         String year         = (String) DateFormat.format("yyyy", date); // 2013
 
         while (currentDate!=null){
             Calendar calendar = null;
-            calendar.set(year,monthNumber,day);
-            if()
+            calendar.set();
+
         }
 
         longitudeClient.get("https://api.opencagedata.com/geocode/v1/google-v3-json?address=" +cityName +  "exclude" + [+  ]+" &key=c9de57c867b8494498339ef67ff95be5"
