@@ -1,5 +1,5 @@
 
-package com.example.weather;
+package com.example.weather.weekModels;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -23,13 +23,11 @@ public class Main {
     private Double seaLevel;
     @SerializedName("grnd_level")
     @Expose
-    private Integer grndLevel;
+    private Double grndLevel;
     @SerializedName("humidity")
     @Expose
     private Integer humidity;
-    @SerializedName("temp_kf")
-    @Expose
-    private Integer tempKf;
+
 
     public Double getTemp() {
         return temp;
@@ -71,28 +69,6 @@ public class Main {
         this.seaLevel = seaLevel;
     }
 
-    public Integer getGrndLevel() {
-        return grndLevel;
-    }
 
-    public void setGrndLevel(Integer grndLevel) {
-        this.grndLevel = grndLevel;
-    }
-
-    public Integer getHumidity() {
-        return humidity;
-    }
-
-    public void setHumidity(Integer humidity) {
-        this.humidity = humidity;
-    }
-
-    public Integer getTempKf() {
-        return tempKf;
-    }
-
-    public void setTempKf(Integer tempKf) {
-        this.tempKf = tempKf;
-    }
 
 }
